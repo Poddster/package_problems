@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # coding=utf-8
 from __future__ import absolute_import, division, print_function
-import f
+
+try:
+    import f
+except ImportError:
+    import tools.f as f
+
 def do_something():
     return "|ssl connect|" + f.do_something()
 
