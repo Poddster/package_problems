@@ -2,10 +2,13 @@
 # coding=utf-8
 from __future__ import absolute_import, division, print_function
 
-import c
-import d
-import k
-import s
+try:
+    import c, d, k, s
+except ImportError:
+    import tools.c as c
+    import tools.d as d
+    import tools.k as k
+    import tools.s as s
 
 print("my_tool!")
 def do_something():

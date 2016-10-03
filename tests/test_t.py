@@ -2,7 +2,7 @@
 # coding=utf-8
 from __future__ import absolute_import, division, print_function
 
-import t
+import tools.t as t
 
 
 def test_my_tool():
